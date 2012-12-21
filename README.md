@@ -103,6 +103,12 @@ Following are notes specific to individual linters that you should be aware of:
 * **JavaScript** - If the "javascript_linter" setting is "jshint" or "jslint", this linter runs [jshint](http://jshint.org) (or [jslint](http://jslint.com) respectively) using Node.js. See "Javascript-based linters" above for information on how to install Node.js.
 
   If the "javascript_linter" setting is "gjslint", this linter runs the [closure linter (gjslint)](https://developers.google.com/closure/utilities/docs/linter_howto). After installation, if gjslint cannot be found by SublimeLinter, you may have to set the path to gjslint in the "sublimelinter\_executable\_map" setting.
+  
+    "sublimelinter_executable_map":
+    {
+      "javascript": "/path/to/gjslint"
+    }
+
 
   You may want to modify the options passed to jshint, jslint, or gjslint. This can be done by using the **jshint_options**, **jslint_options**, or **gjslint_options** setting. Refer to the jshint.org site, the jslint.com site, or run `gjslint --help` for more information on the configuration options available.
 
